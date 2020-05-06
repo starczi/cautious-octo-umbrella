@@ -1,0 +1,129 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(lightblue, lightseagreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Navigation menu*/
+
+.navigation {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 3px solid cadetblue;
+}
+
+    .navigation li {
+        float: left;
+        font-size: 20pt;
+    }
+
+        .navigation li:last-child {
+            float: right;
+        }
+
+        .navigation li a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: white;
+        }
+
+            .navigation li a:hover:not(.active) {
+                background-color: #dd9999;
+            }
+
+.active {
+    background-color: sandybrown;
+}
+
+/*Index content*/
+
+.content {
+    font-size: 16pt;
+    padding: 16px;
+}
+
+/*Random stuff content*/
+
+.square-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.square {
+    background: tomato;
+    padding: 80px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    line-height: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+    .flex-item:last-child {
+        margin-bottom: 10px;
+    }
+
+/*Contact Form*/
+
+.contact-form {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #dd6655;
+}
+
+.form-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: yellowgreen;
+}
+
+.input > input {
+    width: 200px;
+    outline: none;
+}
+
+.inner-msg {
+    display: flex;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.inner-msg > textarea{
+    height: 80px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px;
+    background: aqua;
+}
+
+.btn {
+    text-align: center;
+    width: 150px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    background: red;
+}
+.btn:hover {
+    background: aquamarine;
+    color: #6465a5;
+}
