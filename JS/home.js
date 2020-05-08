@@ -2,19 +2,20 @@
 const app = {
     firstName: document.getElementById("firstName"),
     surname: document.getElementById("surname"),
-    email: document.getElementById("email")
+    email: document.getElementById("email"),
+    textarea: document.getElementById("textarea")
 }
 
-const button = document.getElementsByClassName("btn");
+const button = document.getElementById("btn");
 
 button.addEventListener("click", function() {
-    console.log('click');
-    ClearText
+    ClearForm();
     alert("Message Sent!");
 });
 
-function ClearText() {
-    app.firstName.textContent.clear();
-    app.surname.textContent.clear();
-    app.email.textContent.clear();
+function ClearForm() {
+    app.firstName.value = "";
+    app.surname.value = "";
+    app.email.value = "";
+    app.textarea.value = "";
 }
