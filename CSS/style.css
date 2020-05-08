@@ -51,7 +51,7 @@ footer {
         }
 
             .navigation li a:hover:not(.active) {
-                background-color: #dd9999;
+                background: linear-gradient(to right, #d66d75, #e29587);
             }
 
 .active {
@@ -186,10 +186,12 @@ header > h1 {
 /* Contact form style */
 
 .contact-form {
-    max-width: 700px;
-    margin: 50px auto;
+    position: relative;
+    max-width: 800px;
+    margin: 140px auto;
     padding: 40px;
-    background: #dd6655;
+    background: linear-gradient(to right, #d66d75, #e29587);
+    border: 2px solid white;
     box-sizing: border-box;
 }
 
@@ -202,42 +204,48 @@ header > h1 {
 
 .input-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
-    padding: 10px;
-    background: yellowgreen;
+    padding: 10px 0 10px 0;
 }
 
 .input > input {
-    width: 200px;
+    width: 220px;
     outline: none;
+    border: 1px solid black;
+    padding: 5px 0 5px 5px;
 }
 
 .inner-msg {
     display: flex;
     margin-bottom: 20px;
-    background: white;
 }
 
     .inner-msg > textarea {
         height: 80px;
         width: 100%;
-        padding: 10px 20px;
-        margin: 5px;
-        background: aqua;
+        padding: 5px 0 5px 5px;
+        outline: none;
+        border: 1px solid black;
     }
 
-.btn {
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+}
+.button {
     text-align: center;
     width: 150px;
-    border: 2px solid black;
+    border: 1px solid white;
     padding: 10px 20px;
     color: white;
     cursor: pointer;
-    background: red;
+    background: #333;
 }
 
-    .btn:hover {
-        background: aquamarine;
-        color: #6465a5;
+    .button:hover {
+        background: linear-gradient(to right, #02aab0, #00cdac);
+        color: black;
     }
